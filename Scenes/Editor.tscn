@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dihi5e680bhth"]
+
+[ext_resource type="Script" uid="uid://cnoley2jgp4wc" path="res://Scripts/Editor.cs" id="1_0lbib"]
+
+[node name="Editor" type="Node2D"]
+script = ExtResource("1_0lbib")
