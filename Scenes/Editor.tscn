@@ -1,6 +1,104 @@
-[gd_scene load_steps=2 format=3 uid="uid://dihi5e680bhth"]
+[gd_scene load_steps=3 format=3 uid="uid://dihi5e680bhth"]
 
 [ext_resource type="Script" uid="uid://cnoley2jgp4wc" path="res://Scripts/Editor.cs" id="1_0lbib"]
+[ext_resource type="Texture2D" uid="uid://cns5crow3j3v4" path="res://Assets/Pal_1/body.png" id="2_0hhuw"]
 
 [node name="Editor" type="Node2D"]
 script = ExtResource("1_0lbib")
+
+[node name="HSplitContainer" type="HBoxContainer" parent="."]
+offset_top = -1.0
+offset_right = 1149.0
+offset_bottom = 549.0
+
+[node name="Left" type="PanelContainer" parent="HSplitContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Options" type="VBoxContainer" parent="HSplitContainer/Left"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="Type" type="VBoxContainer" parent="HSplitContainer/Left/Options"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="HSplitContainer/Left/Options/Type"]
+layout_mode = 2
+text = "Select a Type"
+
+[node name="Type Options" type="OptionButton" parent="HSplitContainer/Left/Options/Type"]
+layout_mode = 2
+selected = 0
+item_count = 3
+popup/item_0/text = "Type 1"
+popup/item_0/id = 0
+popup/item_1/text = "Type 2"
+popup/item_1/id = 1
+popup/item_2/text = "Type 3"
+popup/item_2/id = 2
+
+[node name="Face" type="VBoxContainer" parent="HSplitContainer/Left/Options"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="HSplitContainer/Left/Options/Face"]
+layout_mode = 2
+text = "Select a Face"
+
+[node name="Face Options" type="OptionButton" parent="HSplitContainer/Left/Options/Face"]
+layout_mode = 2
+selected = 0
+item_count = 8
+popup/item_0/text = "Angry"
+popup/item_0/id = 0
+popup/item_1/text = "Tongue out"
+popup/item_1/id = 1
+popup/item_2/text = "Happy"
+popup/item_2/id = 2
+popup/item_3/text = "Surprised"
+popup/item_3/id = 3
+popup/item_4/text = "Scared"
+popup/item_4/id = 4
+popup/item_5/text = "Sleepy"
+popup/item_5/id = 5
+popup/item_6/text = "Smug"
+popup/item_6/id = 6
+popup/item_7/text = "Taunt"
+popup/item_7/id = 7
+
+[node name="Layer Selection" type="VBoxContainer" parent="HSplitContainer/Left/Options"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="HSplitContainer/Left/Options/Layer Selection"]
+layout_mode = 2
+text = "Select a Layer"
+
+[node name="Layer Options" type="OptionButton" parent="HSplitContainer/Left/Options/Layer Selection"]
+layout_mode = 2
+selected = 0
+item_count = 1
+popup/item_0/text = "Select a Layer"
+popup/item_0/id = 0
+
+[node name="Color Picking" type="VBoxContainer" parent="HSplitContainer/Left/Options"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="HSplitContainer/Left/Options/Color Picking"]
+layout_mode = 2
+text = "Select a color for the Layer"
+
+[node name="Colour Picker" type="ColorPickerButton" parent="HSplitContainer/Left/Options/Color Picking"]
+layout_mode = 2
+text = "Pick A colour"
+color = Color(1, 1, 1, 1)
+edit_alpha = false
+
+[node name="Right" type="AspectRatioContainer" parent="HSplitContainer"]
+layout_mode = 2
+stretch_mode = 1
+
+[node name="TextureRect" type="TextureRect" parent="HSplitContainer/Right"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+texture = ExtResource("2_0hhuw")
+expand_mode = 2
+stretch_mode = 4
