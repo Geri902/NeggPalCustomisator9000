@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://n3aypluvaa80"
-path="res://.godot/imported/1-droolmouth.png-153234e437e6ae431b6f09094b2eabc1.ctex"
+path="res://.godot/imported/1-drool-mouth.png-2f0c22c8ff52c9282be28fa742661327.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Pal_1/1-droolmouth.png"
-dest_files=["res://.godot/imported/1-droolmouth.png-153234e437e6ae431b6f09094b2eabc1.ctex"]
+source_file="res://Assets/Pal_1/1-drool-mouth.png"
+dest_files=["res://.godot/imported/1-drool-mouth.png-2f0c22c8ff52c9282be28fa742661327.ctex"]
 
 [params]
 

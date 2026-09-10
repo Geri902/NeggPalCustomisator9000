@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://dihi5e680bhth"]
 
 [ext_resource type="Script" uid="uid://cnoley2jgp4wc" path="res://Scripts/Editor.cs" id="1_0lbib"]
-[ext_resource type="Texture2D" uid="uid://cns5crow3j3v4" path="res://Assets/Pal_1/body.png" id="2_0hhuw"]
+[ext_resource type="Texture2D" uid="uid://cns5crow3j3v4" path="res://Assets/Pal_1/1-body.png" id="2_0hhuw"]
 
 [node name="Editor" type="Node2D"]
 script = ExtResource("1_0lbib")
@@ -10,6 +10,7 @@ script = ExtResource("1_0lbib")
 offset_top = -1.0
 offset_right = 1149.0
 offset_bottom = 549.0
+size_flags_vertical = 3
 
 [node name="Left" type="PanelContainer" parent="HSplitContainer"]
 layout_mode = 2
